@@ -29,9 +29,7 @@ document.getElementById("calculate").addEventListener("click", function() {
         }
     
         document.getElementById('result').textContent = result;
-    }
-
-)
+    });
 
 
 
