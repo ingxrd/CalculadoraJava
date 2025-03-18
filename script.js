@@ -1,5 +1,4 @@
-document.getElementById("calculate").addEventListener("click", 
-    function() {
+document.getElementById("calculate").addEventListener("click", function() {
         //Essa parte cria constantes para salvar os inputs do usuário.
 
         const numero1 = document.getElementById("number1").value;
@@ -9,20 +8,21 @@ document.getElementById("calculate").addEventListener("click",
         // Agora que tenho os elementos do DOM na minha funcao, consigo criar, usando switch ou if-else, enfim, 
         // a forma de calcular. Como estou falando de varios casos, vou optar pelo uso do SWITCH
 
-        let result
+        let result;
 
         switch(operator){
             case '+':  
-                result = number1 + number2;
+                result = numero1 + numero2;
                     break;
             case '-':
-                result = number1 - number2;
+                result = numero1 - numero2;
                     break;
             case '*':
-                result = number1 * number2;
+                result = numero1 * numero2;
                     break;
             case '/': 
-                result = number1 / number2;
+                result = numero2 !==0 ? numero1/numero2 : "Erro: divisao por zero";
+                result = numero1 / numero2;
                     break; 
             
             default:
